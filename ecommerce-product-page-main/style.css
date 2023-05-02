@@ -99,6 +99,11 @@ section .container-1{
 }
 .container-section-2 img:hover{
     cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    transform: scale(0.9);
+    opacity: 0.5;
+    z-index: 2;
+    transition: transform 0.2s ease-in;
 }
 .container-section-2 img:first-child{
     margin-left: 0;
@@ -173,6 +178,8 @@ button.add-to-cart{
 }
 button.add-to-cart:hover{
     cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.4s ease-in-out;
 }
 button.add-to-cart img{
     margin-right: 5%;
