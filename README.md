@@ -4,6 +4,7 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 ## This Repository contains
 - [x] Expanding cards project.
 - [x] Progress steps project.
+- [x] E-commerce product page project.
 
 ## Expanding cards project
 
