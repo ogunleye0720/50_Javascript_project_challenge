@@ -6,6 +6,8 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 - [x] Progress steps project.
 - [x] E-commerce product page project.
 
+- [x] Double vertical slider
+
 ## Expanding cards project
 
 
