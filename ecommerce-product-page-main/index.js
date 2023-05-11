@@ -8,6 +8,8 @@ let cart_basket = document.querySelector('.span-cart')
 let add_to_cart = document.querySelector('.add-to-cart')
 let count = 0;
 
+
+/* Product Image gallery */
 for (let i = 0; i < thumbnails.length; i++){
     thumbnails[i].addEventListener(
         'click', () => {
