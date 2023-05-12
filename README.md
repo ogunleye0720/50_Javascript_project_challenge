@@ -19,6 +19,6 @@ Some of the benefits of Progress steps/bars are;
 - It creates a user interaction, which enables users confirm that their transactions are successful 
 - It helps reduce uncertainty and provide reassurance of the end users.
 While implementing the Progress step project, I have learnt
-1. How to use the document object Manupulation (DOM) to create some interactivity on the frontend.
+1. How to use the document object Model Manupulation (DOM) to create some interactivity on the frontend.
 2. I have learnt a logic which helped on incrementing pr decrementing the Progress bar on every clicks.
 3. I learnt how to disable mouse activity on a button.
