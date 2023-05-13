@@ -6,6 +6,7 @@ let counter_minus = document.querySelector('.counter-minus')
 let counter_plus = document.querySelector('.counter-plus')
 let cart_basket = document.querySelector('.span-cart') 
 let add_to_cart = document.querySelector('.add-to-cart')
+let cart_img_thumnail = document.querySelector('.cart-img-thumnail')
 let count = 0;
 
 
