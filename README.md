@@ -16,7 +16,7 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 Progress steps are used to show progress of a task, such as uploading files, filling a form, signing up to a new account, ordering on an ecommerce website.
 The Progress steps help to guide users through a number of steps in order to complete a certain task.
 Some of the benefits of Progress steps/bars are;
-- It creates a user interaction, which enables users confirm that their transactions are successful 
+- It creates a user interaction, which enables users to confirm that their transactions are successful 
 - It helps reduce uncertainty and provide reassurance of the end users.
 While implementing the Progress step project, I have learnt
 1. How to use the document object Model Manupulation (DOM) to create some interactivity on the frontend.
