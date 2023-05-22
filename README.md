@@ -8,6 +8,7 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 
 - [x] Double vertical slider
 - [X] Content_place_holder
+- [X] Animated_navigation_bar
 
 ## Expanding cards project
 
