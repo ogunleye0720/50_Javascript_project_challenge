@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile|Navbar</title>
+    <link rel="stylesheet" href="./asset/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <p>DELGO</p>
+            </a>
+            <nav class="navbar" data-navbar>
+                <button class="close-btn"  aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <p>DELGO</p>
+                </a>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">About</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Menu</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <p class="headline-1 navbar-title">Visit us</p>
+
+                    <address class="body-4">
+                        Restaurant St, Delicious City, <br>
+                        London 9578, UK
+                    </address>
+
+                    <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+                    <a href="mailto:delgo@gmail.com" class="body-4 sidebar-link">delgo@gmail.com</a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Booking Request</p>
+                    <a href="tell:+23481476989" class="body-1 contact-number hover-underline">
+                        +234-814-76989
+                    </a>
+                </div>
+            </nav>
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Find A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Find A Table</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+
+
+<!-- custom javascript -->
+<script src="./index.js"></script>
+
+<!-- ion-icon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
