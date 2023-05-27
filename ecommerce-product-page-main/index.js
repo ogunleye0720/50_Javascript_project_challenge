@@ -6,7 +6,9 @@ let counter_minus = document.querySelector('.counter-minus')
 let counter_plus = document.querySelector('.counter-plus')
 let cart_basket = document.querySelector('.span-cart') 
 let add_to_cart = document.querySelector('.add-to-cart')
-let cart_img_thumnail = document.querySelector('.cart-img-thumnail')
+let cart_img_thumbnail = document.querySelector('.cart-img-thumnail')
+let light_box = document.querySelector(".light-box")
+let cartToggler = document.querySelector(".cart-toggler")
 let count = 0;
 
 
@@ -14,6 +16,7 @@ let count = 0;
 for (let i = 0; i < thumbnails.length; i++){
     thumbnails[i].addEventListener(
         'click', () => {
+            cart_img_thumbnail.src = thumbnails[i].src
             removeActiveClasses()
             const array2 = Array.prototype.slice.call(thumbnails)
             for (let k = 0; k < array2.length; k++){
@@ -24,6 +27,7 @@ for (let i = 0; i < thumbnails.length; i++){
         }    
     )
 }
+
 /* This function hides the number of cart items on page reload*/
 hideCartItem();
 
@@ -48,7 +52,15 @@ counter_plus.addEventListener('click', () => {
     })
 });
 
+/*  Cart Toggler */
+cartToggler.addEventListener('click', () => {
+    navToggler();
+})
+
 /* Callback functions */
+const navToggler = () => {
+    light_box.classList.toggle("light-box-active");
+};
 
 function removeActiveClasses(){
     for(let m = 0; m < product_wrapper.length; m++){
@@ -66,6 +78,7 @@ function updateCartDisplay(){
     cart_basket.classList.remove('cartItemHide')
     cart_basket.classList.add('cart-span')
 };
+
 function hideCartItem(){
     if (cart_basket.innerHTML == 0){
         cart_basket.classList.remove('cart-span')
