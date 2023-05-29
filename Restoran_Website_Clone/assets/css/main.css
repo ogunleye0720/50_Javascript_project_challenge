@@ -10,13 +10,18 @@ a{
 h1{
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.2;
     color: #0F172B;
 }
+img{
+    vertical-align: middle;
+}
 
 body{
     margin: 0;
+    font-family: "Heebo", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
@@ -30,7 +35,7 @@ body{
     margin-inline: auto;
 }
 
-section .container-2{
+.container-2{
     padding: 0;
     position: relative;
     width: 100%;
@@ -39,7 +44,7 @@ section .container-2{
 
 /*====== NAVBAR ====== */
 
-nav .navbar{
+.navbar{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -122,13 +127,6 @@ button:not(:disabled), [type="button"]:not(:disabled){
 .navbar-dark .navbar-nav.nav-link.active{
     color: #fff;
 }
-.btn.btn-primary-2{
-    color: #fff;
-}
-.btn-primary-2{
-    background-color: #FEA116;
-    color: #FEA116;
-}
 .btn{
     display: inline-block;
     line-height: 1.5;
@@ -138,13 +136,139 @@ button:not(:disabled), [type="button"]:not(:disabled){
     user-select: none;
     font-weight: 500;
     text-transform: uppercase;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
     border: 1px solid transparent;
     border-radius: 2px;
     transition: .5s;
+}
+.btn.btn-primary-2{
+    color: #fff;
+}
+.btn-primary-2{
+    background-color: #FEA116;
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        position: absolute;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        padding-inline: 3rem;
+        padding-block: 0;
+        z-index: 999;
+        background: transparent;
+    }
+}
+
+/* ====== HEADER ====== */
+.container-2{
+    width: 100%;
+    margin-inline: auto;
+}
+.hero-header{
+    background: linear-gradient(rgba(15,23,43,0.9), rgba(15,23,43,0.9)), url(../img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0F172B;
+    padding-block: 3rem;
+    margin-bottom: 3rem;
+}
+.container-3{
+    width: 100%;
+    margin-inline: auto;
+    margin-block: 3rem;
+    padding-block: 3rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: calc(3rem * -1);
+    margin-inline: calc(3rem / -2);
+}
+.row>*{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-inline: calc(3rem / 2);
+    margin-top: 3rem;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.slideInLeft{
+    animation-name: slideInLeft;
+}
+@keyframes slideInLeft {
+    0%{
+        transform: translate3d(-100%,0,0);
+        visibility: visible;
+    }
+    100%{
+        transform: translateZ(0);
+    }
+}
+.display-3{
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #fff;
+}
+.display-4{
+    color: #fff;
+    margin-block-end: 1.5rem;
+    padding-inline-end: 0.5rem;
+}
+.text-lg-end{
+    text-align: right;
+    overflow: hidden;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.hero-header img{
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+@media (min-width:576px) {
+    .container-3{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px) {
+    .container-3{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container-3{
+        max-width: 960px;
+    }
+    .text-lg-start{
+        text-align: left;
+    }
+    .column-wrapper{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (min-width:1200px) {
+    .container-3{
+        max-width: 1140px;
+    }
+    .display-3{
+        font-size: 4rem;
+    }
 }
 
 
@@ -166,19 +290,6 @@ button:not(:disabled), [type="button"]:not(:disabled){
 
 
 @media (min-width: 992px) {
-    .navbar-dark{
-        position:absolute;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-inline: 3rem;
-        background: transparent;
-    }
     .navbar-dark .navbar-toggler{
         display: none;
     }
