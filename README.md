@@ -10,6 +10,8 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 - [X] Content_place_holder
 - [X] Animated navigation bar
 
+- [X] Restoran website clone
+
 ## Expanding cards project
 
 
