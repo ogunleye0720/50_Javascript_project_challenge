@@ -7,7 +7,7 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 - [x] E-commerce product page project.
 
 - [x] Double vertical slider
-- [X] Content_place_holder
+- [X] Content place holder
 - [X] Animated navigation bar
 
 - [X] Restoran website clone
