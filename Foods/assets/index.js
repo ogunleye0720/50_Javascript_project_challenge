@@ -28,6 +28,7 @@ setInterval(() => {
 /* ===========================
             MENU
    =========================== */
+   
 menu.addEventListener('click', () => {
     target.forEach((item) => {
         item.classList.toggle('change')
