@@ -11,6 +11,7 @@ This repository contains a list of 50 Javascript projects. The aim of this proje
 - [X] Animated navigation bar
 
 - [X] Restoran website clone
+- [X] Business Agency
 
 ## Expanding cards project
 
